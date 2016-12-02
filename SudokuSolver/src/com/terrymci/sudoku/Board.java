@@ -39,13 +39,18 @@ public class Board
         {
             List<String> lines = new ArrayList<String>();
             
+            // Loop through the file lines
             String nextLine;
             for (;;)
             {
+            	// Get next line
                 nextLine = reader.readLine();
                 if (nextLine != null)
                 {
+                	// Add to list of rows
                     lines.add(nextLine);
+                    
+                    // Stop once all necessary rows are read 
                     if (lines.size() == Board.DIMENSION_BOARD)
                     {
                         break;
@@ -57,11 +62,13 @@ public class Board
                 }
             }
 
+            // If there are not enough lines, error
             if (lines.size() != Board.DIMENSION_BOARD)
             {
                 throw new IllegalArgumentException("Invalid line count");
             }
-            
+
+            // Load the lines into the board
             int row = 0;
             for (String line : lines)
             {

@@ -1,6 +1,6 @@
 # SudokuSolver
 Java project for a basic Sudoku puzzle solving engine. 
-Refer to https://en.wikipedia.org/wiki/Sudoku for basic info about the game rules.
+Refer to https://en.wikipedia.org/wiki/Sudoku for Sudoku game background and rules.
 
 This project represents a Sudoku board as a 9x9 matrix of Cells, which can have an assigned integer value or a null value. 
 The 3x3 subsections of the Board are called "Squares".

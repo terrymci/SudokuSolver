@@ -17,6 +17,14 @@ If the value is present in the row or colum, set the overlapping cells for that 
 If the analysis square is left with only one blank cell, set that cell in the actual game board to be the target integer value. 
 Repeat this for all integer values 1 - 9.
 
+A game is played by simply repeatedly looping through the set of tactics, applying them to the board, and stopping when one of the following happens:
+
+1. The board is complete (all cells have been filled in.)
+
+2. The board is invalid (a cell row/column/square uniqueness rule was violated.) This would indicate a bug with this code.
+
+3. No further progress is made on a loop iteration. This means this code cannot solve the puzzle. This is to be expected on more difficult starting boards. 
+
 
 # Core Classes
 

@@ -50,5 +50,5 @@ Repeat this for all integer values 1 - 9.
 
 # Dependencies
 
-Unit tests use JUnit 4.10
+Unit tests use JUnit 4.10 (junit.org)
 

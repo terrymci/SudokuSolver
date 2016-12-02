@@ -8,12 +8,10 @@ Game play is represented by "Tactics" - a particular kind of operation to analyz
 
 This project currently has two tactics:
 
-"Brute Force"
-For any empty cell, look at the combined set of non-empty cells that are in the same row, coliumn and 3x3 square. 
+"Brute Force" : For any empty cell, look at the combined set of non-empty cells that are in the same row, coliumn and 3x3 square. 
 If that set lacks just one of the possible integer values, set that cell to be that value.
 
-"Square Scan"
-For any 3x3 square lacking a particular target integer value, make a copy of the square for analysis. 
+"Square Scan" : For any 3x3 square lacking a particular target integer value, make a copy of the square for analysis. 
 Look for the target integer value in the board rows and columns that intersect the square. 
 If the value is present in the row or colum, set the overlapping cells for that row/column in the analysis square to an arbitrary value (this uses zero). 
 If the analysis square is left with only one blank cell, set that cell in the actual game board to be the target integer value. 

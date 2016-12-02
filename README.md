@@ -56,5 +56,5 @@ A game is played by simply repeatedly looping through the set of tactics, applyi
 
 # Dependencies
 
-Unit tests use JUnit 4.10 (junit.org)
+Unit tests use JUnit 4.10 (www.junit.org)
 
